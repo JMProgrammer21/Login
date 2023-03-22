@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuário</title>
+    <link rel="stylesheet" href="../PROJETO_LOGIN/css/editar_cadastro.css">
+   
+</head>
+<body>
+    <aside id="logado">
+            <h1 id="h1" >Troque seus dados </h1>
+                                <div id="container_bt">
+                    
+                    <form id= "EditarCadastro">
+                    
+                        <label> Login: 
+                        <input type="text" placeholder="Digite seu nome" id="nomeED" required></label>
+
+                        <label> Idade: 
+                        <input type="number" placeholder="Digite sua idade" id="idadeED" required></label>
+                        
+                        <label>E-mail: 
+                        <input type="email" placeholder="Digite seu melhor e-mail" id="emailED" required> </label>
+                        
+                        <label> Endereço: 
+                        <input type="text" placeholder="Digite seu endereço" id="enderecoED">  </label>
+
+                        <label> telefone: 
+                        <input type="tel" placeholder="(--) 0 0000-0000" id="telefoneED" required> </label>
+                        
+                        <label> Senha: 
+                        <input type="password" placeholder="Digite sua Senha" id="senhaED" required> </label>
+                        
+                        <label> Repita a Senha: 
+                        <input type="password" placeholder="Repita sua Senha" id="senha2ED" required> </label>
+
+                        <input  type="submit" id="enviar" class="Botoes_Hiden">
+                        <input  type="reset" id="resetar" class="Botoes_Hiden" >
+
+                </form>
+                <button id="voltarLogado" class="botao">voltar</button>
+                </div>
+                
+    </aside>
+    <script>
+        const BTVoltarLogado= document.getElementById("voltarLogado");
+        BTVoltarLogado.addEventListener('click',function(){
+            window.location.href="../PROJETO_LOGIN/conseguiu_logado.html";});
+        
+    </script>
+    <script src="../PROJETO_LOGIN/JS/editar_usuarios.js"></script>
+    
+
+</body>
+</html>

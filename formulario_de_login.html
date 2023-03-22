@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de login</title>
+    <link rel="stylesheet" href="../PROJETO_LOGIN/css/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <video autoplay loop muted  id="background-video" >
+        <source src="../PROJETO_LOGIN/midia/video_login.mp4" type="video/mp4">
+    </video>
+
+    <img id="logotipo" src="../PROJETO_LOGIN/midia/Jm.png" >
+        <div id="container">
+
+
+            <header >
+                <nav id="menu">
+                        <button id="A1" class="BTFORM" onclick="">Formulário</button>
+                        
+                </nav>
+            </header> 
+
+        <main>
+            <div id= "tela">
+                <h1 id="Titulo_Cadastro">CADASTRO</h1>
+                <h1 id="Titulo_login">Login</h1>
+
+               <form id= "cadastro">
+                
+                    <label> Nome: </label>
+                    <input type="text" placeholder="Digite seu nome" id="nome" required>
+                    
+
+                    <label> Idade: </label>
+                    <input type="number" placeholder="Digite sua idade" id="idade" required>
+                    
+                    <label>E-mail: </label>
+                    <input type="email" placeholder="Digite seu melhor e-mail" id="email" required>
+                    
+
+                    <label> Endereço: </label> 
+                    <input type="text" placeholder="Digite seu endereço" id="endereco" >
+                    
+
+                    <label> telefone: </label>
+                    <input type="tel" placeholder="(--) 0 0000-0000" id="telefone" required>
+                    
+
+                    <label> Senha: </label>
+                    <input type="password" placeholder="Digite sua Senha" id="senha" required>
+                    
+
+                    <label> Repita a Senha: </label>
+                    <input type="password" placeholder="Repita sua Senha" id="senha2" required>
+                    
+                    <input  type="submit" id="enviar" class="Botoes_Hiden">
+                    <input  type="reset" id="resetar" class="Botoes_Hiden">
+                    <button  id="botaoDeVoltar" class="Botoes_Hiden" onclick="voltar()">voltar</button>
+               </form>
+
+               <form id= "login">
+                
+                <label>Usúario/User:</label>
+                    <input id="log_usuario" type="text" placeholder="Digite seu Login" >
+                <label>Senha/Password:</label>
+                    <input id="senha_log" type="password" placeholder="Digite sua Senha">
+                
+                
+
+               </form>
+
+                <button id="botao_login"> Entrar/Sing In</button>
+
+                <button id="botaoCadastro">Cadastro/Sing Up</button>
+            </div>
+        </main>
+        </div>
+
+        <script> 
+        //funcao para voltar  para a home.
+            function voltar(){
+                window.location.href = '../PROJETO_LOGIN/formulario_de_login.html';
+            }
+        </script>
+        <script src="../PROJETO_LOGIN/JS/form1.js"></script>
+        <script src="../PROJETO_LOGIN/JS/cadastrar_usuarios.js"></script>
+  </body>
+</html>

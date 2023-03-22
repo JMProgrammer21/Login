@@ -1,0 +1,223 @@
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top:0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    filter: brightness(30%);
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container{
+    display:flex;
+    position: fixed;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    top:0;
+    animation: fade 2s;
+}
+
+#logotipo{
+    display: block;
+    position: relative;
+    width: 200px;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
+    border-radius: 80px;
+    box-shadow: 10px 0px 10px -10px aquamarine,0px 10px 10px -10px aquamarine;
+}
+
+#menu {
+    margin-top: 25%;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    z-index: 1;
+    background: none;
+    width: 350px;
+}
+
+.BTFORM{
+    width: 35%;
+    margin-left: 10%;
+    font-family: 'Gloock', serif; 
+    font-size: auto;
+    border: 2px solid aquamarine;
+    border-radius: 10px;   
+}
+
+main{
+    width: 40%;
+    height: 70%;
+}
+
+#tela{
+    display:block;
+    box-sizing: border-box;
+    position:absolute;
+    width:40%;
+    height: 70%;
+    background-image: linear-gradient(black,aquamarine,white,aquamarine,black);
+    border: 2px solid aquamarine;
+    border-radius: 50px;
+    z-index: 0;
+    box-shadow: 0px 0px 10px 1px aquamarine;
+}
+
+#tela h1{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: -1px -1px 5px aquamarine;
+}
+
+#tela #Titulo_Cadastro{
+    display: none;
+}
+
+/*Tela de login*/
+
+#login{     
+    margin-top: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}    
+
+#login label{
+    text-shadow: 1px 1px 5px rgb(77, 75, 75);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    width: 35%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    justify-self: flex-start;
+}
+
+#login input{
+    text-align:center;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    justify-self: flex-start;
+    align-self: center;
+    position: relative;
+    width: 35%;
+    height: 45%;
+    border-radius: 30px;
+    box-shadow: 0px 8px 10px -1px black;
+    left: -10%;
+}
+
+#tela button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    border:none;
+    background: none;
+
+    margin-left: 10%;
+    position: relative;
+    left: 15%;
+    top: 10%;
+ 
+} 
+
+
+
+/*Tela de cadastro*/
+
+#cadastro{ /*ESSE FORM ESTÁ DE FORMA GERAL LOGIN E CADASTRO*/
+    
+    margin: 10%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#cadastro label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    width: 35%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    justify-self: flex-start;
+}
+
+
+#cadastro input{
+    text-align: center;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    justify-self:flex-start;
+    align-self: flex-end;
+    position: relative;
+    width: 45%;
+    height: 45%;
+    border-radius: 30px;
+}
+
+#cadastro #botaoDeVoltar{
+    position: relative;
+    left: 50%;
+    z-index: 2;
+    height:50px;
+    bottom: 50px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: white;
+}
+
+
+#cadastro, #enviar{
+    align-self: center;
+    margin-top: 30px;
+}
+
+
+#cadastro .Botoes_Hiden:hover{
+    color:black;
+    box-sizing: border-box;
+    font-weight: bold;
+    
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 2px aquamarine ;
+}
+
+
+
+#tela button:hover{
+    color:blue;
+    text-decoration: underline;
+    
+}
+.BTFORM:hover{
+    color: crimson;
+    box-shadow: 0px 0px 10px 1px aquamarine;
+}
+
+/*iframe*/
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
